@@ -1,0 +1,8 @@
+Assuming unrestricted shared filesystem usage.
+host: b6d84d27690e
+Building DAG of jobs...
+MissingInputException in rule convert_to_uppercase in file "/workspace/workflow/Snakefile", line 7:
+Missing input files for rule convert_to_uppercase:
+    output: processed_output.txt
+    affected files:
+        input.txt
