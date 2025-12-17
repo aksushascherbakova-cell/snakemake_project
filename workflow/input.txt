@@ -1,1 +1,1 @@
-Hello from the Snakemake workflow inside a Docker container!
+Hello from Snakemake workflow in Docker container!
