@@ -1,18 +1,11 @@
-# Целевое правило - что мы хотим получить в итоге
 rule all:
     input:
         "processed_output.txt"
 
-# Рабочее правило
 rule convert_to_uppercase:
     input:
         "input.txt"
     output:
         "processed_output.txt"
     shell:
-        """
-        echo "Starting processing at $(date)" 
-        tr '[:lower:]' '[:upper:]' < {input} > {output}
-        echo "File processed successfully!" 
-        wc -l {output}
-        """
+        "echo 'Processing...' && tr '[:lower:]' '[:upper:]' < {input} > {output} && echo 'Done!'"
